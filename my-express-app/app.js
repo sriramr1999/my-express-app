@@ -28,7 +28,7 @@ wss.on("connection", (ws) => {
       const outputPath = path.join(__dirname, "output", "output.raw");
       fs.appendFile(outputPath, message, (err) => {
         if (err) throw err;
-        console.log("wrote message");
+        console.log("wrote messages");
       });
     }
   });
